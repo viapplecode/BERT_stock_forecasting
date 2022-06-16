@@ -8,6 +8,8 @@ import pandas as pd
 import torch
 #from fastai.text import BaseTokenizer
 
+
+# 使用fastai
 class FastAiBertTokenizer(fastai.text.BaseTokenizer):
     """Wrapper around BertTokenizer to be compatible with fast.ai"""
     def __init__(self, tokenizer: BertTokenizer, max_seq_len: int=128, **kwargs):
